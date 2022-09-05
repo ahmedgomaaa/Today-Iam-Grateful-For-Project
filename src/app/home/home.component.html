@@ -1,0 +1,20 @@
+<div class="container">
+
+
+
+        <div class="card">
+            <div class="card-header" >
+                <h1>Today I Am Grateful for:</h1>
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+        <div *ngIf=" show == true " class="card-answer">
+            <p>  {{text[textSelector]}}  </p>
+        </div>
+
+        <div   class="show-button">
+            <button (click)="ShowAnswer()" >Show</button>
+            <button   (click)="Another()" [disabled]="!buttonDisabled"> New </button>
+        </div>
+</div>
